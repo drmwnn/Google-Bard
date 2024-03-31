@@ -15,40 +15,8 @@ checkbox.addEventListener("click", function () {
     }
 });
 
-const sponsors = [
-  { id: 1, image: 'assets/img/alpha-jwc1.png'},
-  { id: 2, image: 'assets/img/alpha-jwc2.png'},
-  { id: 3, image: 'assets/img/alpha-jwc3.png'},
-  { id: 4, image: 'assets/img/alpha-jwc4.png'},
-  { id: 5, image: 'assets/img/alpha-jwc5.png'},
-  { id: 6, image: 'assets/img/alpha-jwc6.png'},
-  { id: 7, image: 'assets/img/alpha-jwc7.png'},
-  { id: 8, image: 'assets/img/alpha-jwc8.png'},
-];
 
-const duplicatedSponsors = [...sponsors, ...sponsors];
 
-const sponsorList = document.getElementById('group');
-
-renderSponsor();
-
-function renderSponsor(){
-  sponsorList.innerHTML = '';
-
-  duplicatedSponsors.forEach(sponsor => {
-      const itemSponsor = document.createElement('div');
-      itemSponsor.classList.add('frame-1');
-      itemSponsor.innerHTML = `
-          <div class="frame-2">
-              <div class="frame-3">
-                  <img src="${sponsor.image}" alt="Sponsor ${sponsor.id}" class="sponsor-image">
-              </div>
-          </div>
-      `;
-
-      sponsorList.appendChild(itemSponsor);
-  });
-}
 
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.item-pict');
@@ -82,12 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const artikel = [
-  { id: 1, image: 'https://akcdn.detik.net.id/community/media/visual/2023/11/25/osha-penyandang-autisme-finish-marathon_169.jpeg?w=700&q=90', title: 'Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya', time: 'Sabtu, 25 Nov 2023 20:00 WIB'},
-  { id: 2, image: 'https://akcdn.detik.net.id/community/media/visual/2023/11/28/misi-lestari-2023-see-nature_169.jpeg?w=700&q=90', title: 'Edukasi Lingkungan Hidup Bonus Sehat di \'Misi Lestari 2023: See Nature\'', time: 'Selasa, 28 Nov 2023 07:42 WIB'},
-  { id: 3, image: 'https://akcdn.detik.net.id/community/media/visual/2023/11/26/pertamina-eco-runfest-2023_169.jpeg?w=700&q=90', title: 'Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023', time: 'Minggu, 26 Nov 2023 13:04 WIB'},
-  { id: 4, image: 'https://akcdn.detik.net.id/community/media/visual/2023/11/18/ct-arsa-charity-fun-run-2023-11.jpeg?w=700&q=90', title: 'Kelar Lari di CT Arsa Charity Fun Run, \'Recharge\' Energi Nonton Maliq & D\'essentials', time: 'Sabtu, 18 Nov 2023 17:39 WIB'},
-  { id: 5, image: 'https://akcdn.detik.net.id/community/media/visual/2023/11/16/metal-go-ct-arsa-fun-run.jpeg?w=700&q=90', title: 'CT Arsa Charity Fun Run 2023 Bertabur Emas', time: 'Kamis, 16 Nov 2023 16:34 WIB'},
-  { id: 6, image: 'https://akcdn.detik.net.id/community/media/visual/2023/11/12/btn-jakarta-run-2023-4.jpeg?w=700&q=90', title: 'BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta', time: 'Minggu, 12 Nov 2023 11:55 WIB'},
+  { id: 1, image: 'https://assets.kompasiana.com/items/album/2024/04/01/63d7c465e27a2-6609d53cde948f6dbc0aaa72.png?t=o&v=770', title: 'AI Vs Manusia', time: 'Senin, 1 Apr 2024 04:27 WIB'},
+  { id: 2, image: 'https://assets.kompasiana.com/items/album/2024/03/31/whatsapp-image-2024-03-29-at-23-51-40-66097e33c57afb3ae85489f2.jpeg?t=o&v=770', title: 'Peran Manusia Indonesia dalam Dunia Seni dan Teknologi', time: 'inggu, 30 Mar 2024 22:22 WIB'},
+  { id: 3, image: 'https://assets.kompasiana.com/items/album/2024/03/31/banner-metaverse-66096770c57afb5d1c44a392.jpg?t=o&v=770', title: 'Melangkah ke Era Metaversity: Transformasi Pendidikan di Indonesia', time: 'inggu, 30 Mar 2024 20:46 WIB'},
+  { id: 4, image: 'https://assets.kompasiana.com/items/album/2024/03/31/wls-3-66093da8c57afb4e7402b702.png?t=o&v=770', title: 'Sukses dengan Widya Load Scanner, Widya Robotics Siap Luncurkan Produk Baru', time: 'Minggu, 30 Mar 2024 17:46 WIB'},
+  { id: 5, image: 'https://assets.kompasiana.com/items/album/2024/03/30/wls-2-1-66082e3714709369765ef982.png?t=o&v=770', title: 'Widya Load Scanner Evolusi Terbaru 2024 Widya Robotics Siap Diluncurkan', time: 'Sabtu, 30 Mar 2024 22:25 WIB'},
+  { id: 6, image: 'https://assets.kompasiana.com/items/album/2024/03/30/opini-6607c100c57afb68f97c5352.jpg?t=o&v=770', title: 'Penggunaan AI pada Pendidikan di China: Mengekang atau Meningkatkan', time: 'Sabtu, 30 Mar 2024 14:56 WIB'},
+  
 ];
 
 const artikelList = document.getElementById('frame-1');

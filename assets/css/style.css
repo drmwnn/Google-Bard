@@ -203,8 +203,17 @@ nav .category:hover{
 .hero-container a {
     text-decoration: none;
 }
+#mobile{
+    display:none;
+}
 
 /* ukuran mobile */
+@media (max-width: 450px) {
+    #mobile{
+        display:block;
+        margin-top: 50px;
+    }
+}
 
 
 .article-container {
@@ -1051,6 +1060,9 @@ nav .category:hover{
     top: 0;
     width: 100%;
 }
+#mobile{
+    display:none;
+}
 
 /* ukuran mobile */
 @media (max-width: 450px) {
@@ -1067,6 +1079,10 @@ nav .category:hover{
     }
     .hero-container img{
         width: 100%;
+    }
+    #mobile{
+        display:block;
+        margin-top: 50px;
     }
 }
 
